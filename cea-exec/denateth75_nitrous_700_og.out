@@ -1,0 +1,25 @@
+
+ *******************************************************************************
+
+         NASA-GLENN CHEMICAL EQUILIBRIUM PROGRAM CEA2, MAY 21, 2004
+                   BY  BONNIE MCBRIDE AND SANFORD GORDON
+      REFS: NASA RP-1311, PART I, 1994 AND NASA RP-1311, PART II, 1996
+
+ *******************************************************************************
+
+
+
+ prob case=12338386 ro equilibrium
+  
+  ! iac problem
+ o/f 3.94 3.95 3.96 3.97 3.98 3.99 4.00 4.1 4.2 4.3
+ p,psia  700
+ supar 4.58
+ reac
+  fuel  C2H5OH wt%=75.000 t,k=298.15
+  fuel  H2O(L) wt%=17.127 t,k=298.15
+  fuel C5H10O2 wt%=4.144 h,kj=-33.37 C 5 H 10 O 2
+  fuel C3H8O wt%=3.729  h,kj=0.36  C 3 H 8 O 1
+  oxid  N2O wt%=100. t,k=200
+ output short
+ output trace=1e-5
